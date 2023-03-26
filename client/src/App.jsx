@@ -14,18 +14,18 @@ function App() {
   const spotifyLogo = 'https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png';
   const[img, setImg] = useState(logo);
   // const[genre, setGenre] = useState('');
-  const[artist, setArtist] = useState('');
+  // const[artist, setArtist] = useState('');
   const[title, setTitle] = useState('');
-  const[listener, setListener] = useState('');
+  // const[listener, setListener] = useState('');
 
   function getRandomMusic() {
     api.get('api/songs/song/random')
       .then((res) => {
         setImg(res.data.cover_image);
         // setGenre(res.data.genre);
-        setArtist(res.data.artist);
+        // setArtist(res.data.artist);
         setTitle(res.data.title);
-        setListener(res.data.listener);
+        // setListener(res.data.listener);
       })
       .catch((err) => {
         console.log('Erro: ', err);
@@ -49,7 +49,7 @@ function App() {
            `Título: ${title} `}
 
         </p>
-        <p>
+        {/* <p>
           {artist === ''?
             '':
            `Artista: ${artist} `}
@@ -60,7 +60,7 @@ function App() {
             '':
            `Ouvinte: ${listener} `}
 
-        </p>
+        </p> */}
         <button
           className="App-link"
           onClick={()=>getRandomMusic()}
