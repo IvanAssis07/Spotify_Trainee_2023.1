@@ -24,10 +24,10 @@ const Artist = sequelize.define('Artist', {
   }
 });
 
-Artist.sync({alter: false, force: false})
-  .then(() => {
-    console.log('Artist table was (re)created');
-  })
-  .catch((err) => console.log(err));
+// Artist.sync({alter: false, force: false})
+//   .then(() => {
+//     console.log('Artist table was (re)created');
+//   })
+//   .catch((err) => console.log(err));
 
 module.exports = Artist;

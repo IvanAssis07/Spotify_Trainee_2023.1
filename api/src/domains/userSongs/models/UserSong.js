@@ -31,10 +31,10 @@ UserSong.belongsTo(Song);
 User.hasMany(UserSong);
 UserSong.belongsTo(User);
 
-UserSong.sync({alter: false, force: false})
-  .then(() => {
-    console.log('UserSong table was (re)created');
-  })
-  .catch((err) => console.log(err));
+// UserSong.sync({alter: false, force: false})
+//   .then(() => {
+//     console.log('UserSong table was (re)created');
+//   })
+//   .catch((err) => console.log(err));
 
 module.exports = UserSong;

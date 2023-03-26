@@ -33,10 +33,10 @@ const User = sequelize.define('Users', {
 Comando para criar/alterar as
 colunas da tabela caso necessário
  */
-User.sync({alter: false, force: false})
-  .then(() => {
-    console.log('User table was (re)created');
-  })
-  .catch((err) => console.log(err));
+// User.sync({alter: false, force: false})
+//   .then(() => {
+//     console.log('User table was (re)created');
+//   })
+//   .catch((err) => console.log(err));
 
 module.exports = User;

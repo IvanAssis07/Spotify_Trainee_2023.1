@@ -41,10 +41,10 @@ Artist.hasMany(Song, {
 Comando para criar/alterar as
 colunas da tabela caso necessário
  */
-Song.sync({alter: false, force: false})
-  .then(() => {
-    console.log('Song table was (re)created');
-  })
-  .catch((err) => console.log(err));
+// Song.sync({alter: false, force: false})
+//   .then(() => {
+//     console.log('Song table was (re)created');
+//   })
+//   .catch((err) => console.log(err));
 
 module.exports = Song;
